@@ -1,0 +1,16 @@
+package uhc.uhcdemo;
+
+import java.lang.Number;
+
+rule "ktestguidedrule"
+	dialect "mvel"
+	ruleflow-group "scheduleruleNOTUSED"
+	no-loop true
+	when
+		patient : Patient( gender in ( "M", "F" ) )
+	then
+		modify( patient ) {
+				setIsscheduled( true )
+		}
+		System.out.println("set patient value");
+end

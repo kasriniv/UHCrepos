@@ -217,7 +217,7 @@ public class Patient implements java.io.Serializable
        System.out.println("gender"+gender+"risk"+risk+"category"+category+"type"+appttype+"department"+dept+"reason"+apptreason+
        "visittype"+visittype);
        return "gender"+gender+"risk"+risk+"category"+category+"type"+appttype+"department"+dept+"reason"+apptreason+
-       "visittype"+visittype;
+       "visittype"+visittype+"apptSpecialCase"+apptspecialcase;
    }
 
    public Patient(java.lang.String id, java.lang.String name,
